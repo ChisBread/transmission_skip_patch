@@ -3,6 +3,7 @@
 请确认满足以下使用条件
 - 群晖6.2.3
 - transmission为SynologyCommunity套件v3.0版
+- 使用前备份好/var/packages/transmission/target/bin 文件夹
 # 使用方式
 ssh 到群晖
 安装补丁
