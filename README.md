@@ -13,7 +13,7 @@
 # 安装方式
 ## docker安装
 ```
-docker pull chisbread/transmission:version-3.00-r2
+docker pull chisbread/transmission:version-3.00-r3
 ```
 详情见[链接](https://hub.docker.com/repository/docker/chisbread/transmission)
 ## 群晖套件
