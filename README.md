@@ -18,8 +18,8 @@
 ## 群晖套件
 - 1.重装: 直接安装对应的套件
 - 2.免重装: 替换群晖套件目录下的transmission-daemon (适用于SynoCommunity Transmission v3.0版)，并修改用户、组和权限
-补丁命令
-```
+```bash
+#复制命令
 wget -O - https://raw.githubusercontent.com/ChisBread/transmission_skip_patch/master/patchspk.sh | bash
 ```
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/patch_1.jpg)
