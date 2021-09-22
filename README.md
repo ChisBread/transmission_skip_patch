@@ -12,13 +12,15 @@
 - 使用方式: 选中校验中的任务, 点击"重新校验"开启批量超快速校验
 # 安装方式
 ## docker安装
-```
-docker pull chisbread/transmission:version-3.00-r3
-```
+![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/docker_1.jpg)
+![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/docker_2.jpg)
 详情见[链接](https://hub.docker.com/repository/docker/chisbread/transmission)
 ## 群晖套件
 - 1.重装: 直接安装对应的套件
 - 2.免重装: 替换群晖套件目录下的transmission-daemon (适用于SynoCommunity Transmission v3.0版)，并修改用户、组和权限
+补丁命令
 ```
-//具体命令待补充
+wget -O - https://raw.githubusercontent.com/ChisBread/transmission_skip_patch/master/patchspk.sh | bash
 ```
+![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/patch_1.jpg)
+![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/patch_2.jpg)
