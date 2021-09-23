@@ -30,7 +30,7 @@ else
 fi
 mkdir -p /tmp/transmission_skip_patch
 cd /tmp/transmission_skip_patch
-wget ${SPK_D} -O tr.spk && tar xf tr.spk && tar xf package.tgz
+wget --no-check-certificate ${SPK_D} -O tr.spk && tar xf tr.spk && tar xf package.tgz
 chown sc-transmission:transmission bin/transmission-daemon && chmod 777 bin/transmission-daemon
 
 mv ${TRROOT}/bin/transmission-daemon ${TRROOT}/bin/transmission-daemon.bak
