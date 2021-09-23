@@ -17,7 +17,11 @@
 - 2.免重装: 确定Transmission版本为v3.0, 按以下教程操作, 重启套件后生效
 - 复制以下命令
 ```bash
-wget --no-check-certificate -O - https://raw.githubusercontent.com/ChisBread/transmission_skip_patch/master/patchspk.sh | bash
+wget -O - https://raw.githubusercontent.com/ChisBread/transmission_skip_patch/master/patchspk.sh | bash
+```
+- gitee备用链接
+```
+wget -O - https://gitee.com/chisbread/transmission_skip_patch/raw/master/patchspk.sh | bash
 ```
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/patch_1.jpg)
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/patch_2.jpg)
