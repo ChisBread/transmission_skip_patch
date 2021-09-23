@@ -33,7 +33,7 @@ cd /tmp/transmission_skip_patch
 wget --no-check-certificate ${SPK_D} -O tr.spk && tar xf tr.spk && tar xf package.tgz
 chown sc-transmission:transmission bin/transmission-daemon && chmod 777 bin/transmission-daemon
 
-mv ${TRROOT}/bin/transmission-daemon ${TRROOT}/bin/transmission-daemon.bak
+cp ${TRROOT}/bin/transmission-daemon ${TRROOT}/bin/transmission-daemon.bak
 echo '备份至:'${TRROOT}'/bin/transmission-daemon.bak'
 mv bin/transmission-daemon ${TRROOT}/bin/
 echo '成功打上补丁,重启transmission即可'
