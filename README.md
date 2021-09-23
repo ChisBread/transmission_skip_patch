@@ -15,8 +15,8 @@
 ## 群晖套件
 - 1.重装: 直接安装对应的套件
 - 2.免重装: 确定Transmission版本为v3.0, 按以下教程操作, 重启套件后生效
+- 复制以下命令
 ```bash
-#复制命令
 wget -O - https://raw.githubusercontent.com/ChisBread/transmission_skip_patch/master/patchspk.sh | bash
 ```
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/patch_1.jpg)
