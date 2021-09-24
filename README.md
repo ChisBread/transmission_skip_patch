@@ -19,7 +19,7 @@
 ```bash
 wget -O - https://raw.githubusercontent.com/ChisBread/transmission_skip_patch/master/patchspk.sh | bash
 ```
-- gitee备用链接
+- gitee备用链接（国内用户使用）
 ```
 wget -O - https://gitee.com/chisbread/transmission_skip_patch/raw/master/patchspk.sh | bash
 ```
