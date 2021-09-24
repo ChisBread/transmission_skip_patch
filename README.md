@@ -17,7 +17,9 @@
 详情见[链接](https://hub.docker.com/repository/docker/chisbread/transmission)
 ## 群晖套件
 - 1.重装: 直接安装对应的套件
-- 2.免重装: 确定Transmission版本为v3.0, 按以下教程操作, 重启套件后生效
+    - 系统: 支持DSM6.x, DSM7.0
+    - 架构: 支持x86_64, ARMv7(未测试)
+- 2.免重装: 确定群晖为x86架构, 且Transmission版本为v3.0, 按以下教程操作, 重启套件后生效
 - 复制以下命令
 ```bash
 wget -O - https://raw.githubusercontent.com/ChisBread/transmission_skip_patch/master/patchspk.sh | bash
