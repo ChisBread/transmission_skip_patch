@@ -10,6 +10,8 @@ COPY spks/transmission_x64-6.2.3_3.00-19.spk transmission_x64-6.2.3_3.00-19.spk
 COPY install_webui.sh install_webui.sh
 COPY start.sh /start.sh
 COPY settings.json /settings.json
+ENV TRANSMISSION_WEB_HOME=/usr/share/transmission/web \
+    TZ=Asia/Shanghai 
 # 安装transmission
 RUN mkdir -p /tmp/tr && cd /tmp/tr && cp /transmission_x64-6.2.3_3.00-19.spk . && \
     tar xvf transmission_x64-6.2.3_3.00-19.spk && tar xvf package.tgz && \
@@ -17,8 +19,6 @@ RUN mkdir -p /tmp/tr && cd /tmp/tr && cp /transmission_x64-6.2.3_3.00-19.spk . &
     cp -r share/transmission /usr/share
 # 安装增强UI
 RUN bash install_webui.sh
-ENV TRANSMISSION_WEB_HOME=/usr/share/transmission/web \
-    TZ=Asia/Shanghai 
 # ports and volumes
 RUN chmod 765 /start.sh
 EXPOSE 9091 51413/tcp 51413/udp
