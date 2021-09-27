@@ -28,6 +28,7 @@ else
     echo '系统为DSM7.0'
     SPK_D='transmission_skip_patch-master/spks/transmission_x64-7.0_3.00-19.spk'
 fi
+rm -rf /tmp/transmission_skip_patch
 mkdir -p /tmp/transmission_skip_patch
 cd /tmp/transmission_skip_patch
 wget https://github.com/ChisBread/transmission_skip_patch/archive/refs/heads/master.tar.gz --no-check-certificate && tar zxf master.tar.gz
