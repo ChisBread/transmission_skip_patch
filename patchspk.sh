@@ -5,15 +5,8 @@ if [ $USER != 'root' ];then
     echo '以root用户执行本脚本'
     exit 1
 fi
-TRROOT='/volume1/@appstore/transmission'
-for i in $(seq 2 32)
-do   
-if [ ! -d $TRROOT ]; then
-    TRROOT='/volume'$i'/@appstore/transmission'
-else
-    break
-fi
-done
+TRROOT='/var/packages/transmission/target'
+
 if [ ! -d $TRROOT ]; then
   echo '找不到transmission安装路径'
   exit 1
