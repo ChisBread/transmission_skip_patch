@@ -1,6 +1,7 @@
 #!/bin/bash
 if [ ! -x "/config/settings.json" ]; then
     cp /settings.json /config/settings.json
+    chmod 777 /config/settings.json
 fi
 if [ ! -x "/usr/share/transmission/web/index.html" ]; then
     mv /usr/share/transmission/web/transmission-web-control-master/src/* /usr/share/transmission/web/

@@ -13,18 +13,21 @@
 - 去除文件数量限制
 - 增加随机汇报特性
 - 开启了O3优化, 理论上会更快(暂时未发现奇怪的现象)
+- 提供docker、群晖spk以及免重装升级脚本
 
 # 使用256倍速快速校验
 - 注意事项: 不要开启快速校验未完成的种子(比如下载了一半删种重下)!!!
-- 使用方式: 选中任意任务, 点击上方工具栏"获取更多peer"开启/关闭全局快速校验
+- 使用方式: **默认为开启状态** 选中任意任务, 点击上方工具栏"获取更多peer"开启/关闭全局快速校验
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/switch_1.png)
+
 # 安装方式
 
-## docker安装
+## 群晖docker()
+- 其它平台可能需要命令行等方式, 详情见[链接](https://hub.docker.com/repository/docker/chisbread/transmission)
+- 默认账号密码均为transmission, 请及时修改/config/settings.json
 
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/docker_1.png)
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/docker_2.png)
-详情见[链接](https://hub.docker.com/repository/docker/chisbread/transmission)
 
 ## 群晖套件
 
