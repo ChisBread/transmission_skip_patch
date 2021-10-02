@@ -21,6 +21,7 @@
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/switch_1.png)
 
 # 安装方式
+[各平台安装包下载](https://github.com/ChisBread/transmission_pt_edition/releases)
 
 ## 群晖docker
 - 其它平台可能需要命令行等方式, 详情见[链接](https://hub.docker.com/repository/docker/chisbread/transmission)
