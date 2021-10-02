@@ -22,7 +22,7 @@
 
 # 安装方式
 
-## 群晖docker()
+## 群晖docker
 - 其它平台可能需要命令行等方式, 详情见[链接](https://hub.docker.com/repository/docker/chisbread/transmission)
 - 默认账号密码均为transmission, 请及时修改/config/settings.json
 
