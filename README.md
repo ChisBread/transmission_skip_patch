@@ -58,7 +58,7 @@ wget -O - https://gitee.com/chisbread/transmission_skip_patch/raw/master/patchsp
 
 ## 感谢
 
-[TonyRL/docker-transmission-skip-hash-check](https://github.com/TonyRL/docker-transmission-skip-hash-check)
-[blackyau/Transmission_SkipHashChek](https://github.com/blackyau/Transmission_SkipHashChek/)
-[linuxserver/docker-transmission](https://github.com/linuxserver/docker-transmission)
-[superlukia/transmission-2.92_skiphashcheck](https://github.com/superlukia/transmission-2.92_skiphashcheck)
+- [TonyRL/docker-transmission-skip-hash-check](https://github.com/TonyRL/docker-transmission-skip-hash-check)
+- [blackyau/Transmission_SkipHashChek](https://github.com/blackyau/Transmission_SkipHashChek/)
+- [linuxserver/docker-transmission](https://github.com/linuxserver/docker-transmission)
+- [superlukia/transmission-2.92_skiphashcheck](https://github.com/superlukia/transmission-2.92_skiphashcheck)
