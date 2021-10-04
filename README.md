@@ -25,7 +25,7 @@
 
 ## 群晖docker
 - 其它平台可能需要命令行等方式, 详情见[链接](https://hub.docker.com/repository/docker/chisbread/transmission)
-- 默认账号密码均为transmission, 请及时修改/config/settings.json
+- 默认账号密码均为transmission, 请及时修改
 
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/docker_1.png)
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/docker_2.png)
