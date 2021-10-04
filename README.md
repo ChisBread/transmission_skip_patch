@@ -29,6 +29,7 @@
 
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/docker_1.png)
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/docker_2.png)
+![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/docker_3.png)
 
 ## 群晖套件
 
