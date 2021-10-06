@@ -9,7 +9,8 @@
 
 - 通过魔改transmission代码实现的快速hash校验;
   - 相比跳过校验的优势: 校验文件存在性、校验每个文件的头尾pieces、每N个pieces抽样校验一次, 尽可能保证安全
-  - r6版本更新：进一步增强安全性: 发现校验不一致，回退到普通校验再校验一次
+  - r6版本更新：发现校验不一致则回退到普通校验再校验一次, 进一步增强安全性
+  - r7版本更新：对比现有种子的info-hash和file-list, 如果有完全一致的，则取消抽检(超快速)
 - 去除文件数量限制
 - 增加随机汇报特性
 - 开启了O3优化, 理论上会更快(暂时未发现奇怪的现象)
@@ -24,6 +25,8 @@
 [各平台安装包下载](https://github.com/ChisBread/transmission_pt_edition/releases)
 
 ## 群晖docker
+- 特点: 预装了增强版WebUI, 可以使用环境变量配置user, password, rpc-port和peer-port
+  - 建议种子超过5000，就使用不同的rpc-port和peer-port启动一个新的容器, 确保WebUI不卡顿
 - 其它平台可能需要命令行等方式, 详情见[链接](https://hub.docker.com/repository/docker/chisbread/transmission)
 - 默认账号密码均为transmission, 请及时修改
 
