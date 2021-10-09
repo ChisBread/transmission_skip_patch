@@ -3,8 +3,7 @@ wget --no-check-certificate https://github.com/ronggang/transmission-web-control
 /usr/bin/expect <<-EOF
 set time 30
 spawn bash /install-tr-control-cn.sh /user/share/transmission/
-expect {
-"*:" { send "1\r"; }
-}
+send "9\r";
+send "y\r";
 expect eof
 EOF

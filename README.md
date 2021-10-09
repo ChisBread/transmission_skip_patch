@@ -26,7 +26,7 @@
 [各平台安装包下载](https://github.com/ChisBread/transmission_pt_edition/releases)
 
 ## 群晖docker
-- 特点: 预装了增强版WebUI, 可以使用环境变量配置user, password, rpc-port和peer-port
+- 特点: 预装了最新增强版WebUI(支持批量单种限速等功能), 可以使用环境变量配置user, password, rpc-port和peer-port
   - 建议种子超过5000，就使用不同的rpc-port和peer-port启动一个新的容器, 确保WebUI不卡顿
 - 其它平台可能需要命令行等方式, 详情见[链接](https://hub.docker.com/repository/docker/chisbread/transmission)
 - 默认账号密码均为transmission, 请及时修改
@@ -63,7 +63,7 @@ wget -O - https://gitee.com/chisbread/transmission_skip_patch/raw/master/patchsp
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/patch_2.jpg)
 
 ## 感谢
-
+- [ronggang/transmission-web-control](https://github.com/ronggang/transmission-web-control)
 - [TonyRL/docker-transmission-skip-hash-check](https://github.com/TonyRL/docker-transmission-skip-hash-check)
 - [blackyau/Transmission_SkipHashChek](https://github.com/blackyau/Transmission_SkipHashChek/)
 - [linuxserver/docker-transmission](https://github.com/linuxserver/docker-transmission)
