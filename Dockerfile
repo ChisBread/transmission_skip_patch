@@ -25,6 +25,6 @@ ENV USER='transmission'
 ENV PASS='transmission'
 ENV RPCPORT=9091
 ENV PEERPORT=51413
-EXPOSE $PORT $PEERPORT/tcp $PEERPORT/udp
+EXPOSE $RPCPORT $PEERPORT/tcp $PEERPORT/udp
 VOLUME /config /downloads /watch
 ENTRYPOINT [ "/start.sh" ]
