@@ -62,6 +62,11 @@ wget -O - https://gitee.com/chisbread/transmission_skip_patch/raw/master/patchsp
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/patch_1.jpg)
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/patch_2.jpg)
 
+- 群晖套件WebUI更新命令(带批量单种限速)
+使用方法同上
+```
+ curl -s https://raw.githubusercontent.com/ronggang/transmission-web-control/master/release/install-tr-control-cn.sh | sed 's/VERSION=.*wget.*releases.latest.*/VERSION="master"/g' | bash -s auto >> /tmp/install-tr-control-cn-log.txt 2>&1
+```
 ## 感谢
 - [ronggang/transmission-web-control](https://github.com/ronggang/transmission-web-control)
 - [TonyRL/docker-transmission-skip-hash-check](https://github.com/TonyRL/docker-transmission-skip-hash-check)
