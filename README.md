@@ -23,7 +23,6 @@
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/switch_1.png)
 
 # 安装方式
-[各平台安装包下载](https://github.com/ChisBread/transmission_pt_edition/releases)
 
 ## 群晖docker
 - 特点: 预装了最新增强版WebUI(支持批量单种限速等功能), 可以使用环境变量配置user, password, rpc-port和peer-port
@@ -37,7 +36,7 @@
 
 ## 群晖套件
 
-- 直接安装对应的套件
+- 直接安装对应的套件 [各平台安装包下载](https://github.com/ChisBread/transmission_pt_edition/releases) [群晖CPU架构速查](https://kb.synology.cn/zh-cn/DSM/tutorial/What_kind_of_CPU_does_my_NAS_have)
 
 | - | DSM6.2.3 | DSM7.0 | 备注 |
 | :--------  | :-----  | :----  | :----:  |
@@ -47,7 +46,7 @@
 
 - 免重装补丁
 
-确定群晖为**x86架构**, 且版本为**Transmission v3.0**, 按以下教程操作, 重启套件后生效
+确定群晖为**x86架构**, 且TR版本为**Transmission v3.0**, DSM版本为6.2.3或7.0, 按以下教程操作, 重启套件后生效
 
 ```bash
 wget -O - https://raw.githubusercontent.com/ChisBread/transmission_skip_patch/master/patchspk.sh | bash
