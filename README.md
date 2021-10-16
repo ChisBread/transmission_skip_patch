@@ -25,6 +25,7 @@
 # 安装方式
 
 ## 群晖docker
+- 支持架构: x64, armhf(猫盘可用)
 - 特点: 预装了最新增强版WebUI(支持批量单种限速等功能), 可以使用环境变量配置user, password, rpc-port和peer-port
   - 建议种子超过5000，就使用不同的rpc-port和peer-port启动一个新的容器, 确保WebUI不卡顿
 - 其它平台可能需要命令行等方式, 详情见[链接](https://hub.docker.com/repository/docker/chisbread/transmission)
