@@ -35,17 +35,13 @@
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/docker_2.png)
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/docker_3.png)
 
-## 群晖套件
+## 群晖&威联通套件
 
-- 直接安装对应的套件 [各平台安装包下载](https://github.com/ChisBread/transmission_pt_edition/releases) [群晖CPU架构速查](https://kb.synology.cn/zh-cn/DSM/tutorial/What_kind_of_CPU_does_my_NAS_have)
+- 直接安装对应的套件 
+  - [各平台安装包下载](https://github.com/ChisBread/transmission_pt_edition/releases) 
+  - [群晖CPU架构速查](https://kb.synology.cn/zh-cn/DSM/tutorial/What_kind_of_CPU_does_my_NAS_have)
 
-| - | DSM6.2.3 | DSM7.0 | 备注 |
-| :--------  | :-----  | :----  | :----:  |
-| x86_64 | ✓ | ✓ | 已测试 |
-| ARMv5(88f6281) | ✓ | - | 未测试 |
-| ARMv7 | - | ✓ | 未测试 |
-
-- 免重装补丁
+- 群晖免重装补丁
 
 确定群晖为**x86架构**, 且TR版本为**Transmission v3.0**, DSM版本为6.2.3或7.0, 按以下教程操作, 重启套件后生效
 
