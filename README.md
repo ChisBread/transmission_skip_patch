@@ -24,7 +24,7 @@
 
 # 安装方式
 
-## 群晖docker
+## docker(以群晖为例)
 - 支持架构: x64, armhf(猫盘可用)
 - 特点: 预装了最新增强版WebUI(支持批量单种限速等功能), 可以使用环境变量配置user, password, rpc-port和peer-port
   - 建议种子超过5000，就使用不同的rpc-port和peer-port启动一个新的容器, 确保WebUI不卡顿
@@ -35,9 +35,9 @@
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/docker_2.png)
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/docker_3.png)
 
-## 群晖&威联通套件
-
-- 直接安装对应的套件 
+## 群晖、威联通套件
+- 群晖全系列产品支持, 威联通只支持x86_64架构
+- 直接安装对应的套件
   - [各平台安装包下载](https://github.com/ChisBread/transmission_pt_edition/releases) 
   - [群晖CPU架构速查](https://kb.synology.cn/zh-cn/DSM/tutorial/What_kind_of_CPU_does_my_NAS_have)
 
