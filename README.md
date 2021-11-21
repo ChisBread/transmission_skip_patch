@@ -25,7 +25,7 @@
 # 安装方式
 
 ## docker(以群晖为例)
-- 支持架构: x64, armhf(猫盘可用)
+- 支持架构: x86_64, armhf(猫盘可用)
 - 特点: 预装了最新增强版WebUI(支持批量单种限速等功能), 可以使用环境变量配置user, password, rpc-port和peer-port
   - 建议种子超过5000，就使用不同的rpc-port和peer-port启动一个新的容器, 确保WebUI不卡顿
 - 其它平台可能需要命令行等方式, 详情见[链接](https://hub.docker.com/repository/docker/chisbread/transmission)
@@ -43,7 +43,7 @@
 
 - 群晖免重装补丁
 
-确定群晖为**x86架构**, 且TR版本为**Transmission v3.0**, DSM版本为6.2.3或7.0, 按以下教程操作, 重启套件后生效
+确定群晖为**x86_64架构**, 且TR版本为**Transmission v3.0**, DSM版本为6.2.3或7.0, 按以下教程操作, 重启套件后生效
 
 ```bash
 wget -O - https://raw.githubusercontent.com/ChisBread/transmission_skip_patch/master/patchspk.sh | bash
