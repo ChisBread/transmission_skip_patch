@@ -35,12 +35,11 @@
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/docker_2.png)
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/docker_3.png)
 
-## 群晖、威联通套件
-- 群晖全系列产品支持, 威联通只支持x86_64架构
+## 安装包(群晖/威联通/Windows)
+- 群晖全系列产品支持, 威联通只支持x86_64架构(注意. 威联通套件的账号密码均为qnap)
 - 直接安装对应的套件
   - [各平台安装包下载](https://github.com/ChisBread/transmission_pt_edition/releases) 
   - [群晖CPU架构速查](https://kb.synology.cn/zh-cn/DSM/tutorial/What_kind_of_CPU_does_my_NAS_have)
-
 - 群晖免重装补丁
 
 确定群晖为**x86_64架构**, 且TR版本为**Transmission v3.0**, DSM版本为6.2.3或7.0, 按以下教程操作, 重启套件后生效
