@@ -30,9 +30,10 @@ if [ ! -x "bin/transmission-daemon" ]; then
     echo 'bin/transmission-daemon 不存在,请检查网络是否能访问github'
     exit 1
 else
-    chown sc-transmission:transmission bin/transmission-daemon && chmod 777 bin/transmission-daemon
+    TR_USER=`ls -l /var/packages/transmission/target/bin/transmission-daemon|awk '{print $3":"$4}'`
+    chown $TR_USER bin/transmission-daemon && chmod 777 bin/transmission-daemon
     cp ${TRROOT}/bin/transmission-daemon ${TRROOT}/bin/transmission-daemon.bak
-    chown sc-transmission:transmission ${TRROOT}/bin/transmission-daemon.bak
+    chown $TR_USER ${TRROOT}/bin/transmission-daemon.bak
     echo '备份至:'${TRROOT}'/bin/transmission-daemon.bak'
     mv bin/transmission-daemon ${TRROOT}/bin/
     echo '成功打上补丁,重启transmission即可'
