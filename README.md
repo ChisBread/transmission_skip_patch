@@ -45,13 +45,13 @@
 确定群晖为**x86_64架构**, 且TR版本为**Transmission v3.0**, DSM版本为6.2.3或7.0, 按以下教程操作, 重启套件后生效
 
 ```bash
-wget -O - https://raw.githubusercontent.com/ChisBread/transmission_skip_patch/master/patchspk.sh | bash
+wget -O - https://raw.githubusercontent.com/ChisBread/transmission_skip_patch/master/patchspk.sh --no-check-certificate | bash
 ```
 
 国内用户使用gitee备用链接
 
 ```
-wget -O - https://gitee.com/chisbread/transmission_skip_patch/raw/master/patchspk.sh | bash
+wget -O - https://gitee.com/chisbread/transmission_skip_patch/raw/master/patchspk.sh --no-check-certificate | bash
 ```
 
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/patch_1.jpg)
