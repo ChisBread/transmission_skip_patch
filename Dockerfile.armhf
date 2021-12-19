@@ -12,19 +12,21 @@ ENV TRANSMISSION_WEB_HOME=/usr/share/transmission/web \
 # 安装transmission
 RUN mkdir -p /tmp/tr && cd /tmp/tr && cp /transmission_armv7-7.0_3.00-19.spk . && \
     tar xvf transmission_armv7-7.0_3.00-19.spk && tar xvf package.tgz && \
-    chown -R root:root * && chmod 765 lib/* bin/* && cp bin/* /usr/bin/ && cp -r lib/* /lib/arm-linux-gnueabihf/ && \
+    chown -R root:root * && chmod -R 765 lib/ bin/ share/ && cp bin/* /usr/bin/ && cp -r lib/* /lib/arm-linux-gnueabihf/ && \
     cp -r share/transmission /usr/share && cd - && rm -rf /tmp/tr
 # 安装增强UI
 COPY install_webui.sh install_webui.sh
 RUN bash install_webui.sh
-COPY start.sh /start.sh
 COPY settings.json /settings.json
 # ports and volumes
-RUN chmod +x /start.sh
-ENV USER='transmission'
-ENV PASS='transmission'
+ENV TR_USER='transmission'
+ENV TR_PASS='transmission'
+ENV UID=0
+ENV GID=0
 ENV RPCPORT=9091
 ENV PEERPORT=51413
 EXPOSE $RPCPORT $PEERPORT/tcp $PEERPORT/udp
 VOLUME /config /downloads /watch
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
 ENTRYPOINT [ "/start.sh" ]
