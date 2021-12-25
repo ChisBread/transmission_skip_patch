@@ -1,5 +1,5 @@
 [魔改代码开源](https://github.com/ChisBread/transmission_pt_edition)
-
+自行编译各个平台套件, 请看howtobuild文件夹
 # 免责声明
 
 - **使用修改版客户端可能会导致你的账户被封禁。请务必了解使用修改版客户端带来的风险。**
@@ -20,7 +20,7 @@
 - 注意事项: 不要开启快速校验未完成的种子(比如下载了一半删种重下)!!!
 - 使用方式: **快速校验默认为开启状态**
 - 关闭方式: 选中任意任务, 点击上方工具栏"获取更多peer"开启/关闭全局快速校验
-![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/switch_1.png)
+![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/switch_1.png)
 
 # 安装方式
 
@@ -32,9 +32,9 @@
 - 默认账号密码均为transmission, 请及时修改
 - 从r10开始，USER,PASS改为TR_USER,TR_PASS. 且支持UID, GID设置
 
-![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/docker_1.png)
-![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/docker_2.png)
-![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/docker_3.png)
+![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/docker_1.png)
+![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/docker_2.png)
+![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/docker_3.png)
 
 ## 安装包(群晖/威联通/Windows)
 - 群晖全系列产品支持, 威联通只支持x86_64架构(注意. 威联通套件的账号密码均为qnap)
@@ -55,8 +55,8 @@ wget -O - https://raw.githubusercontent.com/ChisBread/transmission_skip_patch/ma
 wget -O - https://gitee.com/chisbread/transmission_skip_patch/raw/master/patchspk.sh --no-check-certificate | bash
 ```
 
-![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/patch_1.jpg)
-![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/%20resource/patch_2.jpg)
+![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/patch_1.jpg)
+![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/patch_2.jpg)
 
 - 群晖套件WebUI更新命令(带批量单种限速)
 使用方法同上
