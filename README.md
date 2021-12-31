@@ -1,5 +1,9 @@
 [魔改代码开源](https://github.com/ChisBread/transmission_pt_edition)
+
+[各平台安装包下载](https://github.com/ChisBread/transmission_pt_edition/releases) 
+
 自行编译各个平台套件, 请看howtobuild文件夹
+
 # 免责声明
 
 - **使用修改版客户端可能会导致你的账户被封禁。请务必了解使用修改版客户端带来的风险。**
