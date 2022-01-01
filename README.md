@@ -1,7 +1,5 @@
 [魔改代码开源](https://github.com/ChisBread/transmission_pt_edition)
 
-[各平台安装包下载](https://github.com/ChisBread/transmission_pt_edition/releases) 
-
 自行编译各个平台套件, 请看howtobuild文件夹
 
 # 免责声明
@@ -20,6 +18,7 @@
   - 增加随机汇报特性
   - 开启了O3优化, 理论上会更快(暂时未发现奇怪的现象)
 - 多平台支持
+  - [dockerhub](https://hub.docker.com/repository/docker/chisbread/transmission); [各平台安装包下载](https://github.com/ChisBread/transmission_pt_edition/releases) 
   - docker: 提供x86_64与armhf的docker镜像，满足大部分平台需求 (**chisbread/transmission:version-3.00-r10 版本支持UID和GID！**)
   - 群晖: 提供DSM6.1~7.0+几乎所有型号架构的spk，提供免重装升级脚本
   - 威联通: 提供qpkg，官方群内有升级教程
@@ -68,10 +67,8 @@ wget -O - https://gitee.com/chisbread/transmission_skip_patch/raw/master/patchsp
 
 ## 安装包(群晖/威联通/Windows)
 - 群晖全系列产品支持, 威联通只支持x86_64架构(注意. 威联通套件的账号密码均为qnap)
+- [群晖CPU架构速查](https://kb.synology.cn/zh-cn/DSM/tutorial/What_kind_of_CPU_does_my_NAS_have)
 - 直接安装对应的套件
-  - [各平台安装包下载](https://github.com/ChisBread/transmission_pt_edition/releases) 
-  - [群晖CPU架构速查](https://kb.synology.cn/zh-cn/DSM/tutorial/What_kind_of_CPU_does_my_NAS_have)
-
 
 # 感谢
 - [ronggang/transmission-web-control](https://github.com/ronggang/transmission-web-control)
