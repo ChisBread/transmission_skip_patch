@@ -60,7 +60,7 @@ wget -O - https://gitee.com/chisbread/transmission_skip_patch/raw/master/patchsp
   - 建议种子超过5000，就使用不同的rpc-port和peer-port启动一个新的容器, 确保WebUI不卡顿
 - 其它平台可能需要命令行等方式, 详情见[dockerhub](https://hub.docker.com/repository/docker/chisbread/transmission)
 - 默认账号密码均为transmission, 请及时修改
--  (**chisbread/transmission:version-3.00-r10 版本支持UID和GID！**)，从r10开始，USER,PASS改为TR_USER,TR_PASS
+- **chisbread/transmission:version-3.00-r10 版本支持UID和GID！**，从r10开始，USER,PASS改为TR_USER,TR_PASS
 
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/docker_1.png)
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/docker_2.png)
