@@ -54,12 +54,11 @@ wget -O - https://gitee.com/chisbread/transmission_skip_patch/raw/master/patchsp
  curl -s https://raw.githubusercontent.com/ronggang/transmission-web-control/master/release/install-tr-control-cn.sh | sed 's/VERSION=.*wget.*releases.latest.*/VERSION="master"/g' | bash -s auto >> /tmp/install-tr-control-cn-log.txt 2>&1
 ```
 ## docker(以群晖为例)
-- 支持架构: x86_64, armhf(猫盘可用)
-- 特点: 预装了最新增强版WebUI(支持批量单种限速等功能), 可以使用环境变量配置user, password, rpc-port和peer-port
+- 支持架构: amd64,armv7,arm64(N1小钢炮、猫盘均可用)
+- 特点: 可以使用环境变量配置user, password, rpc-port和peer-port
   - 建议种子超过5000，就使用不同的rpc-port和peer-port启动一个新的容器, 确保WebUI不卡顿
 - 其它平台可能需要命令行等方式, 详情见[dockerhub](https://hub.docker.com/repository/docker/chisbread/transmission)
-- 默认账号密码均为transmission, 请及时修改
-- **chisbread/transmission:version-3.00-r10 版本支持UID和GID！**，从r10开始，USER,PASS改为TR_USER,TR_PASS
+- 默认无账号密码, 安全起见请及时修改
 
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/docker_1.png)
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/docker_2.png)
