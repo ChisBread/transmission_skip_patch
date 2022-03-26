@@ -19,7 +19,7 @@
   - 开启了O3优化, 理论上会更快(暂时未发现奇怪的现象)
 - 多平台支持
   - [dockerhub](https://hub.docker.com/r/chisbread/transmission); [各平台安装包下载](https://github.com/ChisBread/transmission_pt_edition/releases) 
-  - docker: 提供x86_64与armhf的docker镜像，满足大部分平台需求 (**chisbread/transmission:version-3.00-r10 版本支持UID和GID！**)
+  - docker: 提供amd64,armv7,arm64的docker镜像，满足大部分平台需求; 兼容linuxserver/transmission, 可直接替换
   - 群晖: 提供DSM6.1~7.0+几乎所有型号架构的spk，提供免重装升级脚本
   - 威联通: 提供qpkg，官方群内有升级教程
   - Windows: 提供Windows版本免安装包，由于稳定性欠佳，仅供体验使用
