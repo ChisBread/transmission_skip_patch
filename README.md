@@ -21,38 +21,17 @@
   - [dockerhub](https://hub.docker.com/r/chisbread/transmission); [各平台安装包下载](https://github.com/ChisBread/transmission_pt_edition/releases) 
   - docker: 提供amd64,armv7,arm64的docker镜像，满足大部分平台需求; 兼容linuxserver/transmission, 可直接替换
   - 群晖: 提供DSM6.1~7.0+几乎所有型号架构的spk，提供免重装升级脚本
-  - 威联通: 提供qpkg，官方群内有升级教程
-  - Windows: 提供Windows版本免安装包，由于稳定性欠佳，仅供体验使用
+  - 威联通: (r12版之前)提供qpkg，官方群内有升级教程
+  - Windows: (r12版之前)提供Windows版本免安装包，由于稳定性欠佳，仅供体验使用
 # 使用256倍速快速校验
 - 使用方式: **快速校验默认为开启状态，不需要任何操作 不需要任何操作 不需要任何操作**
-- 关闭方式: 选中任意任务, 点击上方工具栏"获取更多peer"开启/关闭全局快速校验
+- 关闭方式: 点击任务栏"TPE: 已启用", 变成"TPE: 已禁用"则成功关闭
 - 注意事项: 不要开启快速校验未完成的种子(比如下载了一半删种重下)!!!
-![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/switch_1.png)
 
 # 简单教程
 免重装补丁、docker、安装包的简单教程
-## 群晖免重装补丁
-
-确定群晖为**x86_64架构**, 且TR版本为**Transmission v3.0**, DSM版本为6.2.3或7.0, 按以下教程操作, 重启套件后生效
-
-```bash
-wget -O - https://raw.githubusercontent.com/ChisBread/transmission_skip_patch/master/patchspk.sh --no-check-certificate | bash
-```
-
-国内用户使用gitee备用链接
-
-```
-wget -O - https://gitee.com/chisbread/transmission_skip_patch/raw/master/patchspk.sh --no-check-certificate | bash
-```
-
-![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/patch_1.jpg)
-![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/patch_2.jpg)
-
-- 群晖套件WebUI更新命令(带批量单种限速)
-使用方法同上
-```
- curl -s https://raw.githubusercontent.com/ronggang/transmission-web-control/master/release/install-tr-control-cn.sh | sed 's/VERSION=.*wget.*releases.latest.*/VERSION="master"/g' | bash -s auto >> /tmp/install-tr-control-cn-log.txt 2>&1
-```
+## 群晖/威联通套件
+- 下载安装包覆盖安装即可
 ## docker(以群晖为例)
 - 支持架构: amd64,armv7,arm64(N1小钢炮、猫盘均可用)
 - 特点: 可以使用环境变量配置user, password, rpc-port和peer-port
@@ -63,11 +42,6 @@ wget -O - https://gitee.com/chisbread/transmission_skip_patch/raw/master/patchsp
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/docker_1.png)
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/docker_2.png)
 ![image](https://github.com/ChisBread/transmission_skip_patch/raw/master/resource/docker_3.png)
-
-## 安装包(群晖/威联通/Windows)
-- 群晖全系列产品支持, 威联通只支持x86_64架构(注意. 威联通套件的账号密码均为qnap)
-- [群晖CPU架构速查](https://kb.synology.cn/zh-cn/DSM/tutorial/What_kind_of_CPU_does_my_NAS_have)
-- 直接安装对应的套件
 
 # 感谢
 - [ronggang/transmission-web-control](https://github.com/ronggang/transmission-web-control)
